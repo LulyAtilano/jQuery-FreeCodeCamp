@@ -11,4 +11,8 @@ $(document).ready(function(){
     $("#target5").clone().appendTo("#left-well"); // clone and move an element from a place to another
     $("#target1").parent().css("background-color","red"); // add background-color to parent container of #target1
     $("#right-well").children().css("color","orange"); // add color to children of the #right-well container
+    $("#left-well").children().css("color", "green");
+    $(".target:nth-child(2)").addClass("animated bounce"); // add animation to the second child of each container
+    $(".target:even").addClass("animated shake"); // add animation shake for even elements
+    $("body").addClass("animated hinge");
 })
